@@ -726,7 +726,7 @@ function V1Nav() {
     }
   }, React.createElement("a", {
     href: "#top",
-    "aria-label": "Incredible home",
+    "aria-label": "Platform home",
     style: {
       display: 'flex',
       alignItems: 'center',
@@ -748,7 +748,7 @@ function V1Nav() {
       color: '#1A1A1A',
       letterSpacing: '-.01em'
     }
-  }, "Incr\xE8dible")), !isMobile && React.createElement("nav", {
+  }, "Platform")), !isMobile && React.createElement("nav", {
     style: {
       display: 'flex',
       gap: isTablet ? 2 : 6,
@@ -779,7 +779,7 @@ function V1Nav() {
     size: "md",
     variant: "primary",
     onClick: () => openJoinModal({
-      title: 'Join the Incredible beta',
+      title: 'Join the Platform beta',
       subtitle: 'Verify your mobile number to reserve early access.'
     })
   }, isMobile ? 'Join' : 'Join waitlist'))));
@@ -937,7 +937,7 @@ function V1JoinModal({
     };
   }, [config, onClose]);
   if (!config) return null;
-  const title = config.title || 'Join the Incredible beta';
+  const title = config.title || 'Join the Platform beta';
   const subtitle = config.subtitle || 'Enter your mobile number and verify the OTP to reserve early access.';
   return React.createElement("div", {
     role: "dialog",
@@ -1096,7 +1096,7 @@ function V1Hero() {
       maxWidth: 520,
       margin: '0 0 32px'
     }
-  }, "Incredible is an upcoming talent competition app for creators, fans, and event partners. We are building the first beta now: join the waitlist for early access, pilot updates, and launch invites."), React.createElement(V1WaitlistForm, null), React.createElement("div", {
+  }, "Platform is an upcoming talent competition app for creators, fans, and event partners. We are building the first beta now: join the waitlist for early access, pilot updates, and launch invites."), React.createElement(V1WaitlistForm, null), React.createElement("div", {
     style: {
       display: 'flex',
       flexWrap: 'wrap',
@@ -2934,7 +2934,7 @@ function V1Prize() {
       maxWidth: 480,
       margin: 0
     }
-  }, "Join the waitlist for beta invites, pilot city updates, creator onboarding, and launch rewards as Incredible gets closer to release."), React.createElement("div", {
+  }, "Join the waitlist for beta invites, pilot city updates, creator onboarding, and launch rewards as Platform gets closer to release."), React.createElement("div", {
     style: {
       display: 'flex',
       gap: 14,
@@ -2945,7 +2945,7 @@ function V1Prize() {
     variant: "dark",
     onClick: () => openJoinModal({
       title: 'Get early access',
-      subtitle: 'Verify your mobile number to join the Incredible early access list.'
+      subtitle: 'Verify your mobile number to join the Platform early access list.'
     }),
     style: {
       background: '#1A1A1A',
@@ -3069,7 +3069,7 @@ function V1Partners() {
       color: 'rgba(53,53,53,.7)',
       margin: 0
     }
-  }, "Incredible is preparing tools for voting, moderation, audience analytics, sponsor visibility, and creator operations. Partner access will open as the beta becomes ready for pilot events."), React.createElement("div", {
+  }, "Platform is preparing tools for voting, moderation, audience analytics, sponsor visibility, and creator operations. Partner access will open as the beta becomes ready for pilot events."), React.createElement("div", {
     style: {
       display: 'grid',
       gridTemplateColumns: isMobile ? '1fr' : 'repeat(2,1fr)',
@@ -3184,7 +3184,7 @@ function V1Partners() {
       fontWeight: 700,
       fontSize: 13
     }
-  }, "Incredible Partner Team"), React.createElement("div", {
+  }, "Platform Partner Team"), React.createElement("div", {
     style: {
       fontFamily: 'var(--ip-font-body)',
       fontSize: 11,
@@ -3198,7 +3198,7 @@ function V1FAQ() {
   } = useV1Layout();
   const qs = [{
     q: 'Is the app live right now?',
-    a: 'Not yet. Incredible is under development, and this landing page is collecting verified early access requests before the first beta opens.'
+    a: 'Not yet. Platform is under development, and this landing page is collecting verified early access requests before the first beta opens.'
   }, {
     q: 'When will early access open?',
     a: 'Beta invites will roll out in phases. We will start with a small group of creators, fans, and partner organisers so the core experience can be tested carefully.'
@@ -3348,7 +3348,7 @@ function V1Footer() {
       fontSize: 20,
       letterSpacing: '-.01em'
     }
-  }, "Incr\xE8dible")), React.createElement("p", {
+  }, "Platform")), React.createElement("p", {
     style: {
       fontFamily: 'var(--ip-font-body)',
       fontSize: 14,
@@ -3357,7 +3357,7 @@ function V1Footer() {
       maxWidth: 320,
       margin: '0 0 22px'
     }
-  }, "Incredible is an upcoming talent competition app for creators, fans, and event partners. Join the waitlist while the beta is being built."), React.createElement("div", {
+  }, "Platform is an upcoming talent competition app for creators, fans, and event partners. Join the waitlist while the beta is being built."), React.createElement("div", {
     style: {
       display: 'flex',
       gap: 8
