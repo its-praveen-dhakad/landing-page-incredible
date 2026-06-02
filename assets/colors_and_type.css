@@ -1,0 +1,220 @@
+/* ============================================================
+   Incredible Platform — Colors & Type tokens
+   ============================================================
+   Single source of truth for colors and typography. Import this
+   file in any UI kit or preview HTML.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  /* ---------- Brand ---------- */
+  --ip-brand: #00ADEE;          /* Primary cyan-blue, CTAs / links / active */
+  --ip-brand-hover: #009BD6;
+  --ip-brand-pressed: #008ABF;
+  --ip-brand-soft: #CAEEFD;     /* tinted backgrounds, chip hover */
+  --ip-brand-tint: #F0FAFF;     /* very light brand wash */
+  --ip-brand-shadow: rgba(0,173,247,0.35);  /* glow under CTAs */
+
+  --ip-ink: #1A1A1A;            /* deepest text */
+  --ip-ink-2: #353535;          /* heading default */
+  --ip-ink-3: #444444;          /* secondary heading */
+  --ip-accent-dark: #2B2B2B;    /* logo plate / inverse surface */
+
+  /* ---------- Neutrals ---------- */
+  --ip-fg-1: #1A1A1A;           /* default text */
+  --ip-fg-2: #353535;           /* strong */
+  --ip-fg-3: rgba(53,53,53,0.7);/* muted */
+  --ip-fg-4: rgba(53,53,53,0.5);/* placeholder */
+  --ip-fg-5: #999999;           /* disabled / meta */
+  --ip-fg-on-dark: #FFFFFF;
+
+  --ip-bg: #FFFFFF;
+  --ip-bg-soft: #F9F9FA;        /* page surface */
+  --ip-bg-mute: #F5F5F5;        /* card / input fill */
+  --ip-bg-card: #FFFFFF;
+  --ip-bg-inverse: #1A1A1A;
+  --ip-bg-inverse-2: #2B2B2B;
+  --ip-bg-inverse-3: #444444;
+
+  --ip-border: #E5E5E5;
+  --ip-border-strong: #E2E8F0;
+  --ip-border-soft: rgba(53,53,53,0.2);
+  --ip-divider: rgba(0,0,0,0.06);
+
+  /* ---------- Semantic ---------- */
+  --ip-success: #27AE60;
+  --ip-success-soft: #E5F6EC;
+  --ip-warning: #F6C05B;
+  --ip-warning-soft: #FFF6E1;
+  --ip-danger: #FF383C;
+  --ip-danger-soft: #FFE4E5;
+  --ip-info: #4285F4;
+  --ip-info-soft: #E8F0FE;
+
+  /* ---------- Stars / votes ---------- */
+  --ip-star: #F6C05B;
+  --ip-vote: #00ADEE;
+
+  /* ---------- Avatars (decorative tints) ---------- */
+  --ip-avatar-pink: #EDBBD6;
+  --ip-avatar-blue: #BFE5FA;
+  --ip-avatar-mint: #BFE9D6;
+  --ip-avatar-sand: #F0E0BF;
+  --ip-avatar-lilac: #D7CDF5;
+
+  /* ---------- Type ---------- */
+  --ip-font-display: "Outfit", "Inter", system-ui, -apple-system, sans-serif;
+  --ip-font-body: "Lato", "Outfit", system-ui, sans-serif;
+  --ip-font-mono: "JetBrains Mono", "SF Mono", Consolas, monospace;
+
+  /* Sizes — driven by Figma usage. Mobile-first; web inherits. */
+  --ip-size-2xs: 10px;          /* labels, nav captions */
+  --ip-size-xs:  12px;          /* meta, captions */
+  --ip-size-sm:  13px;          /* secondary body */
+  --ip-size-md:  14px;          /* default body */
+  --ip-size-lg:  16px;          /* lead body / large UI */
+  --ip-size-xl:  20px;          /* small heading */
+  --ip-size-2xl: 24px;          /* h3 */
+  --ip-size-3xl: 28px;          /* h2 */
+  --ip-size-4xl: 32px;          /* h1 — section title */
+  --ip-size-5xl: 40px;          /* display */
+  --ip-size-6xl: 48px;          /* hero display */
+  --ip-size-display: 64px;      /* marketing hero */
+
+  /* Line-heights */
+  --ip-lh-tight: 1.0;
+  --ip-lh-snug: 1.2;
+  --ip-lh-normal: 1.4;
+  --ip-lh-relaxed: 1.5;
+
+  /* Weights */
+  --ip-w-light: 300;
+  --ip-w-regular: 400;
+  --ip-w-medium: 500;
+  --ip-w-semibold: 600;
+  --ip-w-bold: 700;
+
+  /* ---------- Spacing (8-pt grid + 4-pt half-step) ---------- */
+  --ip-s-0: 0;
+  --ip-s-1: 4px;
+  --ip-s-2: 8px;
+  --ip-s-3: 12px;
+  --ip-s-4: 16px;
+  --ip-s-5: 20px;
+  --ip-s-6: 24px;
+  --ip-s-8: 32px;
+  --ip-s-10: 40px;
+  --ip-s-12: 48px;
+  --ip-s-16: 64px;
+  --ip-s-20: 80px;
+
+  /* ---------- Radii ---------- */
+  --ip-r-xs: 4px;
+  --ip-r-sm: 8px;
+  --ip-r-md: 10px;              /* inputs, small cards */
+  --ip-r-lg: 16px;
+  --ip-r-xl: 20px;              /* feed cards */
+  --ip-r-2xl: 30px;             /* sheet / bottom sheet */
+  --ip-r-pill: 999px;
+  --ip-r-circle: 50%;
+
+  /* ---------- Shadows ---------- */
+  --ip-shadow-sm: 0 1px 2px rgba(15,23,42,0.06);
+  --ip-shadow-md: 0 6px 16px rgba(15,23,42,0.08);
+  --ip-shadow-lg: 0 18px 40px rgba(15,23,42,0.10);
+  --ip-shadow-cta: 0 8px 22px rgba(0,173,247,0.35);
+  --ip-shadow-glow: 0 0 0 4px rgba(0,173,247,0.18);
+
+  /* ---------- Easing & motion ---------- */
+  --ip-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ip-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ip-dur-fast: 120ms;
+  --ip-dur: 200ms;
+  --ip-dur-slow: 360ms;
+}
+
+/* ============================================================
+   Semantic element styles — use these, not raw vars in components.
+   ============================================================ */
+
+html, body { font-family: var(--ip-font-body); color: var(--ip-fg-1); background: var(--ip-bg); }
+
+.ip-display, h1.ip {
+  font-family: var(--ip-font-display);
+  font-weight: var(--ip-w-bold);
+  font-size: var(--ip-size-5xl);
+  line-height: var(--ip-lh-snug);
+  letter-spacing: -0.01em;
+  color: var(--ip-ink-2);
+}
+.ip-h1, h1 {
+  font-family: var(--ip-font-display);
+  font-weight: var(--ip-w-bold);
+  font-size: var(--ip-size-4xl);
+  line-height: var(--ip-lh-snug);
+  color: var(--ip-ink-2);
+}
+.ip-h2, h2 {
+  font-family: var(--ip-font-display);
+  font-weight: var(--ip-w-semibold);
+  font-size: var(--ip-size-3xl);
+  line-height: var(--ip-lh-snug);
+  color: var(--ip-ink-2);
+}
+.ip-h3, h3 {
+  font-family: var(--ip-font-display);
+  font-weight: var(--ip-w-semibold);
+  font-size: var(--ip-size-2xl);
+  line-height: var(--ip-lh-snug);
+  color: var(--ip-ink-2);
+}
+.ip-h4, h4 {
+  font-family: var(--ip-font-display);
+  font-weight: var(--ip-w-semibold);
+  font-size: var(--ip-size-xl);
+  line-height: var(--ip-lh-normal);
+  color: var(--ip-ink-2);
+}
+
+.ip-title-card {
+  font-family: var(--ip-font-display);
+  font-weight: var(--ip-w-bold);
+  font-size: var(--ip-size-lg);
+  line-height: var(--ip-lh-relaxed);
+  color: var(--ip-fg-1);
+}
+.ip-title-row {
+  font-family: var(--ip-font-display);
+  font-weight: var(--ip-w-semibold);
+  font-size: var(--ip-size-md);
+  line-height: var(--ip-lh-relaxed);
+  color: var(--ip-fg-1);
+}
+
+.ip-body, p {
+  font-family: var(--ip-font-body);
+  font-size: var(--ip-size-md);
+  line-height: var(--ip-lh-relaxed);
+  color: var(--ip-fg-2);
+}
+.ip-body-lg { font-size: var(--ip-size-lg); }
+.ip-body-sm { font-size: var(--ip-size-sm); color: var(--ip-fg-3); }
+.ip-meta    { font-family: var(--ip-font-display); font-weight: var(--ip-w-medium); font-size: var(--ip-size-xs); color: var(--ip-fg-3); }
+.ip-caption { font-family: var(--ip-font-display); font-weight: var(--ip-w-medium); font-size: var(--ip-size-2xs); color: var(--ip-fg-3); letter-spacing: 0.02em; }
+.ip-tab     { font-family: var(--ip-font-display); font-weight: var(--ip-w-medium); font-size: var(--ip-size-md); }
+.ip-button-text { font-family: var(--ip-font-display); font-weight: var(--ip-w-semibold); font-size: var(--ip-size-md); letter-spacing: 0.01em; }
+.ip-handle  { font-family: var(--ip-font-body); font-size: var(--ip-size-xs); color: var(--ip-fg-3); }
+.ip-hashtag { font-family: var(--ip-font-display); font-weight: var(--ip-w-bold); font-size: var(--ip-size-md); text-decoration: underline; color: var(--ip-fg-1); }
+.ip-mono    { font-family: var(--ip-font-mono); font-size: var(--ip-size-sm); }
+
+/* Surfaces */
+.ip-card {
+  background: var(--ip-bg-card);
+  border-radius: var(--ip-r-xl);
+  box-shadow: var(--ip-shadow-md);
+}
+.ip-card-flat {
+  background: var(--ip-bg-mute);
+  border-radius: var(--ip-r-xl);
+}
